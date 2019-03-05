@@ -26,7 +26,7 @@ requirements:
     - pandas
     - requests
     - pydantic >=0.20
-    - qcelemental >=0.2.6
+    - qcelemental >=0.3.0
 
 test:
   requires:
