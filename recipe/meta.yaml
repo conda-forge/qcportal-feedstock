@@ -1,6 +1,6 @@
 {% set name = "qcportal" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "21fc87bb84ed37b77a54c763d7b43857af080502593285d55045a28aee92a648" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "7171b43a3d1de0d7fb62fff77caed03e6e80c97c1a4c5840cf21d67e9ec281eb" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
     - pandas
     - requests
     - pydantic >=0.20
-    - qcelemental >=0.2.6
+    - qcelemental >=0.3.0
 
 test:
   requires:
