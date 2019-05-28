@@ -1,6 +1,6 @@
 {% set name = "qcportal" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "b6b07d241d8fe0ef325841b8e2e8a07d06b40a6c0a112d1b8cad1e9c23f878fd" %}
+{% set version = "0.7.1" %}
+{% set sha256 = "6ff862ed99704b547ba0521f692687a36f20775961d4089093244153e963ed02" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,7 @@ requirements:
     - requests
     - pyyaml
     - pydantic >=0.20
-    - qcelemental >=0.3.3
+    - qcelemental >=0.4.0
     - plotly
 
 test:
