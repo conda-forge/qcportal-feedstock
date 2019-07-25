@@ -1,6 +1,6 @@
 {% set name = "qcportal" %}
-{% set version = "0.7.2" %}
-{% set sha256 = "31831396411fb9474f09609996038012b3397a64cf1e3104ba12f20c2e9d34a4" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "ca8347af03776fd3f13662400e36faef2f6f3c1189e40a3a4d292887f704310e" %}
 
 package:
   name: {{ name|lower }}
@@ -22,12 +22,12 @@ requirements:
 
   run:
     - python >=3.6
-    - numpy
+    - numpy >=1.7
     - pandas
     - requests
-    - pyyaml
-    - pydantic >=0.20
-    - qcelemental >=0.4.0
+    - pyyaml >=5.1
+    - pydantic >=0.30.1
+    - qcelemental >=0.5.0
     - plotly
     - py3dmol
 
