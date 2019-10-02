@@ -28,7 +28,7 @@ requirements:
     - requests
     - pyyaml >=5.1
     - pydantic >=0.32
-    - qcelemental >=0.6
+    - qcelemental >=0.9
     - plotly
     - py3dmol
 
