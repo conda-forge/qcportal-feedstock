@@ -22,7 +22,7 @@ requirements:
 
   run:
     - python >=3.6
-    - msgpack-python>=0.6.1
+    - msgpack-python >=0.6.1
     - numpy >=1.7
     - pandas
     - requests
