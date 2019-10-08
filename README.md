@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: A client interface to the QC Archive Project
+Summary: A client interface to the QCArchive Project.
 
 
 
