@@ -27,7 +27,7 @@ requirements:
     - pandas
     - requests
     - pyyaml >=5.1
-    - pydantic >=0.32
+    - pydantic >=0.32,<1.0
     - qcelemental >=0.9
     - plotly
     - py3dmol
