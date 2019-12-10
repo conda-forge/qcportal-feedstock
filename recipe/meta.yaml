@@ -1,6 +1,6 @@
 {% set name = "qcportal" %}
-{% set version = "0.12.1" %}
-{% set sha256 = "6c8e676396f0f2c0dfaf8fcbdc3928b03a4a70b64d8a36c71693d152ad06ccdc" %}
+{% set version = "0.12.2" %}
+{% set sha256 = "6377c7ff7c8b2fc656c5e233845c674c5e2ff88cc0af45a1dc3833f6a94b9efc" %}
 
 package:
   name: {{ name|lower }}
@@ -17,18 +17,18 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.6,<3.8
     - pip
 
   run:
-    - python >=3.6
+    - python >=3.6,<3.8
     - msgpack-python >=0.6.1
     - numpy >=1.7
     - pandas
     - requests
     - pyyaml >=5.1
     - pydantic >=1.0
-    - qcelemental >=0.11,<0.12.0
+    - qcelemental >=0.12
     - tqdm
     - h5py
     - pyarrow >=0.13.0
