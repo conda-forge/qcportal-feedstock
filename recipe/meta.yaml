@@ -1,6 +1,6 @@
 {% set name = "qcportal" %}
-{% set version = "0.12.2" %}
-{% set sha256 = "6377c7ff7c8b2fc656c5e233845c674c5e2ff88cc0af45a1dc3833f6a94b9efc" %}
+{% set version = "0.12.3" %}
+{% set sha256 = "13e133f77dd61da76ed717e509c35f056e663bf7cf7d5ace897b0b175125f9d3" %}
 
 package:
   name: {{ name|lower }}
