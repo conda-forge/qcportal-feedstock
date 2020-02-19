@@ -27,8 +27,8 @@ requirements:
     - pandas
     - requests
     - pyyaml >=5.1
-    - pydantic >=1.0
-    - qcelemental >=0.12
+    - pydantic >=1.4
+    - qcelemental >=0.13.1
     - tqdm
     - h5py
     - pyarrow >=0.13.0
@@ -58,3 +58,4 @@ extra:
     recipe-maintainers:
         - dgasmith
         - lnaden
+        - mattwelborn
