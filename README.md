@@ -5,7 +5,7 @@ Home: https://github.com/MolSSI/QCPortal
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A client interface to the QCArchive Project.
 
@@ -116,6 +116,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@bennybp](https://github.com/bennybp/)
 * [@dgasmith](https://github.com/dgasmith/)
 * [@lnaden](https://github.com/lnaden/)
+* [@loriab](https://github.com/loriab/)
 
