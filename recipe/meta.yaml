@@ -1,6 +1,6 @@
 {% set name = "qcportal" %}
-{% set version = "0.13.1" %}
-{% set sha256 = "7909d6f54ca938d435a6b161e42aa48fd7dd45d36b2b5aefdbb729ab60bf62aa" %}
+{% set version = "0.14.0" %}
+{% set sha256 = "e809853e856d9cd66455c4f3492f897c43bca3175ccd30d0131e9dbee3ad2cbe" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -55,8 +55,8 @@ about:
   summary: A client interface to the QCArchive Project.
 
 extra:
-    recipe-maintainers:
-        - dgasmith
-        - lnaden
-        - bennybp
-        - loriab
+  recipe-maintainers:
+    - dgasmith
+    - lnaden
+    - bennybp
+    - loriab
