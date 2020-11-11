@@ -3,13 +3,15 @@ About qcportal
 
 Home: https://github.com/MolSSI/QCPortal
 
-Package license: BSD-3-Clause
+Package license: [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qcportal-feedstock/blob/master/LICENSE.txt)
 
 Summary: A client interface to the QCArchive Project.
 
+Development: https://github.com/MolSSI/QCPortal
 
+Documentation: https://qcfractal.readthedocs.io/en/latest/
 
 Current build status
 ====================
