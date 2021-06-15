@@ -1,6 +1,6 @@
 {% set name = "qcportal" %}
-{% set version = "0.15.0" %}
-{% set sha256 = "1dfc34e500b50c46e3968b64981ccc5790110cce746943ebd5a69631994e49ec" %}
+{% set version = "0.15.6" %}
+{% set sha256 = "3d133c59caa358337bdcd05f7e500fac34170c18af197143270678b224916038" %}
 
 package:
   name: {{ name|lower }}
@@ -17,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
 
   run:
-    - python >=3.6
+    - python >=3.7
     - msgpack-python >=0.6.1
     - numpy >=1.7
     - pandas
