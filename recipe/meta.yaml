@@ -1,6 +1,6 @@
 {% set name = "qcportal" %}
-{% set version = "0.15.7" %}
-{% set sha256 = "6ca6810ee2bef6c20f32361a726a5fe994d29430b3909dc5b184b17a68b939a6" %}
+{% set version = "0.15.8" %}
+{% set sha256 = "a6cbdb67e4072807378c08cfc95175dcf2c9b8a1385dc7d450509c9c65ce2e82" %}
 
 package:
   name: {{ name|lower }}
@@ -56,7 +56,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - dgasmith
     - lnaden
     - bennybp
-    - loriab
