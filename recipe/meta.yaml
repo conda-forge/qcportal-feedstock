@@ -1,60 +1,64 @@
 {% set name = "qcportal" %}
 {% set version = "0.50" %}
-{% set sha256 = "3ef280e9225831d8021bc33c77158bb633b34bfb82691b25f12a9289f75a4429" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  - url: https://pypi.io/packages/source/q/qcportal/qcportal-{{ version }}.tar.gz
+    sha256: 3ef280e9225831d8021bc33c77158bb633b34bfb82691b25f12a9289f75a4429
+    folder: qcportal
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: python -m pip install --no-deps -vv ./qcportal
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
-
+    - setuptools >=61.0
+    - versioningit
   run:
-    - python >=3.7
-    - msgpack-python >=0.6.1
-    - numpy >=1.7
-    - pandas <1.5
+    - python >=3.8
+    - numpy
+    - msgpack-python
     - requests
-    - pyyaml >=5.1
-    - pydantic >=1.4,<2
-    - qcelemental >=0.13.1
+    - pyyaml
+    - pydantic <2.0
+    - zstandard
+    - qcelemental
+    - tabulate
     - tqdm
-    - h5py
-    - pyarrow >=0.13.0
-    - plotly
-    - nglview
+    - pandas
+    - pyjwt
 
 test:
-  requires:
-    - pytest
   imports:
     - qcportal
+  requires:
+    - pip
+    - pytest
   commands:
-    - pytest --pyargs qcportal
+    - test -f $SP_DIR/qcportal/__init__.py
+    - pip check
+    - python -c "import qcportal as qc;assert qc.__version__ == '{{ version }}', f'{qc.__version__=} differs from recipe=\'{{ version }}\''"
 
 about:
-  home: https://github.com/MolSSI/QCPortal
-  dev_url: https://github.com/MolSSI/QCPortal
-  doc_url: https://qcfractal.readthedocs.io/en/latest/
-  doc_source_url: https://github.com/MolSSI/QCFractal/blob/master/docs/source/portal-client.rst
+  home: https://github.com/MolSSI/QCFractal
+  dev_url: https://github.com/MolSSI/QCFractal
+  doc_url: https://molssi.github.io/QCFractal/
+  doc_source_url: https://github.com/MolSSI/QCFractal/blob/main/docs/source/index.rst
   license: BSD-3-Clause
-  license_url: https://opensource.org/licenses/BSD-3-Clause
+  license_url: https://opensource.org/license/bsd-3-clause/
   license_file: LICENSE
   license_family: BSD
-  summary: A client interface to the QCArchive Project.
+  summary: Python library for interacting with QCArchive/QCFractal servers
 
 extra:
+  feedstock-name: qcportal
   recipe-maintainers:
     - lnaden
     - bennybp
