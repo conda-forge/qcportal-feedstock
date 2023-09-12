@@ -1,6 +1,6 @@
 {% set name = "qcportal" %}
-{% set version = "0.15.8" %}
-{% set sha256 = "a6cbdb67e4072807378c08cfc95175dcf2c9b8a1385dc7d450509c9c65ce2e82" %}
+{% set version = "0.50" %}
+{% set sha256 = "3ef280e9225831d8021bc33c77158bb633b34bfb82691b25f12a9289f75a4429" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
