@@ -13,38 +13,43 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps -vv ./qcportal
 
-requirements:
-  host:
-    - python >=3.8
-    - pip
-    - setuptools >=61.0
-    - versioningit
-  run:
-    - python >=3.8
-    - numpy
-    - msgpack-python
-    - requests
-    - pyyaml
-    - pydantic <2.0
-    - zstandard
-    - qcelemental
-    - tabulate
-    - tqdm
-    - pandas
-    - pyjwt
-
-test:
-  imports:
-    - qcportal
-  requires:
-    - pip
-    - pytest
-  commands:
-    - test -f $SP_DIR/qcportal/__init__.py
-    - pip check
-    - python -c "import qcportal as qc;assert qc.__version__ == '{{ version }}', f'{qc.__version__=} differs from recipe=\'{{ version }}\''"
+outputs:
+  - name: qcportal
+    build:
+      noarch: python
+      script: python -m pip install --no-deps -vv ./qcportal
+    requirements:
+      host:
+        - python >=3.8
+        - pip
+        - setuptools >=61.0
+        - versioningit
+      run:
+        - python >=3.8
+        - numpy
+        - msgpack-python
+        - requests
+        - pyyaml
+        - pydantic <2.0
+        - zstandard
+        - qcelemental
+        - tabulate
+        - tqdm
+        - pandas
+        - pyjwt
+    test:
+      imports:
+        - qcportal
+      requires:
+        - pip
+        - pytest
+      commands:
+        - test -f $SP_DIR/qcportal/__init__.py
+        - pip check
+        - python -c "import qcportal as qc;assert qc.__version__ == '{{ version }}', f'{qc.__version__=} differs from recipe=\'{{ version }}\''"
+    about:
+      summary: Python library for interacting with QCArchive/QCFractal servers
 
 about:
   home: https://github.com/MolSSI/QCFractal
