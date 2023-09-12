@@ -51,6 +51,10 @@ about:
   dev_url: https://github.com/MolSSI/QCFractal
   doc_url: https://molssi.github.io/QCFractal/
   doc_source_url: https://github.com/MolSSI/QCFractal/blob/main/docs/source/index.rst
+  license: BSD-3-Clause
+  license_url: https://opensource.org/license/bsd-3-clause/
+  license_file: LICENSE
+  license_family: BSD
   summary: Python library for interacting with QCArchive/QCFractal servers
 
 extra:
