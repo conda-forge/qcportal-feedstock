@@ -3,15 +3,15 @@ About qcportal-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qcportal-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/MolSSI/QCPortal
+Home: https://github.com/MolSSI/QCFractal
 
-Package license: [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
+Package license: [BSD-3-Clause](https://opensource.org/license/bsd-3-clause/)
 
-Summary: A client interface to the QCArchive Project.
+Summary: Python library for interacting with QCArchive/QCFractal servers
 
-Development: https://github.com/MolSSI/QCPortal
+Development: https://github.com/MolSSI/QCFractal
 
-Documentation: https://qcfractal.readthedocs.io/en/latest/
+Documentation: https://molssi.github.io/QCFractal/
 
 Current build status
 ====================
